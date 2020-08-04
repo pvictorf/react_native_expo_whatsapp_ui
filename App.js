@@ -4,7 +4,9 @@ import {MaterialIcons, Entypo} from '@expo/vector-icons';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 
 import { Header, Title, TopIcons, TabsText } from './src/style';
+
 import ChatScreen from './src/ChatScreen';
+import CameraScreen from './src/CameraScreen';
 /* expo build:android -t apk */ 
 
 const ZeroRoute = () => (
@@ -45,13 +47,13 @@ const App = () => {
         <TabView
           navigationState={{ index, routes }}
           renderScene={SceneMap({
-            camera: ZeroRoute,
+            camera: CameraScreen,
             chat: ChatScreen,
             status: SecondRoute,
             call: ThirdRoute,
           })}
           renderTabBar={ props => 
-              <TabBar 
+            <TabBar 
               {...props}
               style={{ backgroundColor: '#075e54', elevation: 0.2 }}
               indicatorStyle={{ backgroundColor: '#dee5e4' }}

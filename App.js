@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import { View, Text, Dimensions, StatusBar } from 'react-native';
-import { MaterialIcons, Entypo } from '@expo/vector-icons';
+import {View, Text, Dimensions, StatusBar } from 'react-native';
+import {MaterialIcons, Entypo} from '@expo/vector-icons';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 
 import { Header, Title, TopIcons, TabsText } from './src/style';
 import ChatScreen from './src/ChatScreen';
+/* expo build:android -t apk */ 
 
 const ZeroRoute = () => (
   <View style={{ backgroundColor: '#000', flex:1 }} />
@@ -52,7 +53,7 @@ const App = () => {
           renderTabBar={ props => 
               <TabBar 
               {...props}
-              style={{ backgroundColor: '#075e54'}}
+              style={{ backgroundColor: '#075e54', elevation: 0.2 }}
               indicatorStyle={{ backgroundColor: '#dee5e4' }}
               tabStyle={TabsText}
               renderLabel={({ route, focused, color }) => (

@@ -5,7 +5,7 @@ An interface of the most famous messaging application built with components of R
 # How to use
 ```
 cd react_native_expo_whatsapp_ui
-npm install
+yarn install (recommended) or npm install
 expo start
 ```
 

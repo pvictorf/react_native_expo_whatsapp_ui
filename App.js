@@ -33,13 +33,6 @@ const App = () => {
     { key: 'call', title: 'CALLS' },
   ]); 
 
-  useEffect(() => {
-    (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
-      setHasPermission(status === 'granted');
-    })();
-  }, []);
-
   return (
     <>
       <Header>

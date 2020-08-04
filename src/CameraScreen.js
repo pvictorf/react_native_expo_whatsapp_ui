@@ -29,6 +29,14 @@ export default function App() {
       }
    };
 
+   const flipCamera = () => {
+      setType(
+         type === Camera.Constants.Type.back
+         ? Camera.Constants.Type.front
+         : Camera.Constants.Type.back
+      );
+   }
+
   return (
     <View style={{ flex: 1 }}>
       <Camera style={{ flex: 1 }} type={type} ref={camRef}>
@@ -47,18 +55,12 @@ export default function App() {
             </Text>
          </TouchableOpacity>    
 
-         <TouchableOpacity onPress={() => {  takePhoto() }}>
+         <TouchableOpacity onPress={() => { takePhoto() }}>
             <Text style={{ borderColor: "#FFF", borderWidth: 3, width: 70, height: 70, borderRadius: 70/2 }}> 
             </Text>
          </TouchableOpacity>
 
-         <TouchableOpacity  onPress={() => {
-              setType(
-                type === Camera.Constants.Type.back
-                  ? Camera.Constants.Type.front
-                  : Camera.Constants.Type.back
-              );
-            }}>
+         <TouchableOpacity  onPress={() => { flipCamera() }}>
             <Text style={{ alignSelf: 'flex-end', }}> 
                <Ionicons name="ios-reverse-camera" size={30} color="white" /> 
             </Text>

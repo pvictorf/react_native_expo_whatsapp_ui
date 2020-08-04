@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reactExpoWhatsApp",
-    "slug": "reactExpoWhatsApp",
+    "name": "React Zapp",
+    "slug": "react-zapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -25,7 +25,7 @@
       "favicon": "./assets/images/favicon.png"
     },
     "android": {
-      "package": "com.pvictor.reactapp"
+      "package": "com.pvictorf.reactapp"
     }
   }
 }

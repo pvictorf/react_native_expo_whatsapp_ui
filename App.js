@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, Dimensions, StatusBar } from 'react-native';
 import {MaterialIcons, Entypo} from '@expo/vector-icons';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
@@ -33,6 +33,12 @@ const App = () => {
     { key: 'call', title: 'CALLS' },
   ]); 
 
+  useEffect(() => {
+    (async () => {
+      const { status } = await Camera.requestPermissionsAsync();
+      setHasPermission(status === 'granted');
+    })();
+  }, []);
 
   return (
     <>

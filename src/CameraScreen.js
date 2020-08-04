@@ -34,7 +34,6 @@ export default function App() {
          const data = await camRef.current.takePictureAsync();
          Alert.alert(JSON.stringify(data));
       }
-      
    };
 
   return (
@@ -47,30 +46,27 @@ export default function App() {
             alignItems: 'flex-end',
             backgroundColor: 'transparent',
             flexDirection: 'row',
-            padding: 20
-            
-          }}>
+            padding: 20 }}>
 
-         <TouchableOpacity
-            onPress={() => {}}>
-            <Text></Text>
+         <TouchableOpacity onPress={() => {}}>
+            <Text style={{ alignSelf: 'flex-end', }}> 
+               <Ionicons name="ios-flash" size={30} color="white" />
+            </Text>
          </TouchableOpacity>    
 
-         <TouchableOpacity
-            onPress={() => {  takePhoto() }}>
+         <TouchableOpacity onPress={() => {  takePhoto() }}>
             <Text style={{ borderColor: "#FFF", borderWidth: 3, width: 70, height: 70, borderRadius: 70/2 }}> 
             </Text>
          </TouchableOpacity>
 
-         <TouchableOpacity
-            onPress={() => { flipCamera()  }}>
+         <TouchableOpacity onPress={() => { flipCamera()  }}>
             <Text style={{ alignSelf: 'flex-end', }}> 
                <Ionicons name="ios-reverse-camera" size={30} color="white" /> 
             </Text>
-          </TouchableOpacity>
+         </TouchableOpacity>
 
         </View>
-        <Text style={{textAlign: 'center', color: '#fff', padding: 12}}>Tap to take a picute</Text>
+        <Text style={{textAlign: 'center', color: '#fff', paddingVertical: 8}}>Tap to take a picute</Text>
       </Camera>
     </View>
   );

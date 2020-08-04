@@ -22,13 +22,6 @@ export default function App() {
       return <Text>No access to camera</Text>;
    }
 
-   const flipCamera = async () => {
-      setType(type === Camera.Constants.Type.back
-         ? Camera.Constants.Type.front
-         : Camera.Constants.Type.back
-      );
-   };
-
    const takePhoto = async () => {
       if(camRef) {
          const data = await camRef.current.takePictureAsync();
@@ -59,7 +52,13 @@ export default function App() {
             </Text>
          </TouchableOpacity>
 
-         <TouchableOpacity onPress={() => { flipCamera()  }}>
+         <TouchableOpacity  onPress={() => {
+              setType(
+                type === Camera.Constants.Type.back
+                  ? Camera.Constants.Type.front
+                  : Camera.Constants.Type.back
+              );
+            }}>
             <Text style={{ alignSelf: 'flex-end', }}> 
                <Ionicons name="ios-reverse-camera" size={30} color="white" /> 
             </Text>

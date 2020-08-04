@@ -9,10 +9,6 @@ import ChatScreen from './src/ChatScreen';
 import CameraScreen from './src/CameraScreen';
 /* expo build:android -t apk */ 
 
-const ZeroRoute = () => (
-  <View style={{ backgroundColor: '#000', flex:1 }} />
-); 
-
 const SecondRoute = () => (
    <View style={{ backgroundColor: '#f5f5f5', flex:1 }} />
 );

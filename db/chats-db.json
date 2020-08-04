@@ -1,0 +1,69 @@
+{
+   "data": [
+      {
+         "id": 1,
+         "time": "11:20",
+         "menssage": "Hello I want to parse Json data from a JSON file in local Machine.",
+         "first_name": "Michael",
+         "last_name": "Lawson",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"
+      },
+      {
+         "id": 8,
+         "time": "10:48",
+         "menssage": "Could some one help me?",
+         "first_name": "Lindsay",
+         "last_name": "Ferguson",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"
+      },
+      {
+         "id": 9,
+         "time": "09:12",
+         "menssage": "In short, you should be using require and letting node handle! ",
+         "first_name": "Tobias",
+         "last_name": "Funke",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"
+      },
+      {
+         "id": 10,
+         "time": "06:55",
+         "menssage": "part of the require call, not outsourcing it to a 3rd party module.",
+         "first_name": "Byron",
+         "last_name": "Fields",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"
+      },
+      {
+         "id": 11,
+         "time": "09:11",
+         "menssage": "=/",
+         "first_name": "George",
+         "last_name": "Edwards",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+      },
+      {
+         "id": 12,
+         "time": "22:01",
+         "menssage": "Simplest approach is following :)",
+         "first_name": "Rachel",
+         "last_name": "Howell",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+      },
+      {
+         "id": 13,
+         "time": "22:01",
+         "menssage": "Simplest approach is following :)",
+         "first_name": "Rachel",
+         "last_name": "Howell",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+      },
+      {
+         "id": 14,
+         "time": "22:01",
+         "menssage": "Simplest approach is following :)",
+         "first_name": "Rachel",
+         "last_name": "Howell",
+         "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+      }
+      
+   ]
+}

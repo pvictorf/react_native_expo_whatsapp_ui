@@ -8,5 +8,5 @@ npm install
 expo start
 ```
 
-#Prints
+# Prints
 ![](reactzapp.gif)

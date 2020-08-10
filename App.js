@@ -51,7 +51,7 @@ const App = () => {
             <TabBar 
               {...props}
               style={{ backgroundColor: '#075e54', elevation: 0.2 }}
-              indicatorStyle={{ backgroundColor: '#dee5e4' }}
+              indicatorStyle={{ backgroundColor: '#dee5e4', borderWidth: 1.3, borderColor: "#fff", elevation: 3 }}
               tabStyle={TabsText}
               renderLabel={({ route, focused, color }) => (
                 

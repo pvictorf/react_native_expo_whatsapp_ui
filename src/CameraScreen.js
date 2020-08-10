@@ -67,7 +67,7 @@ export default function App() {
          </TouchableOpacity>
 
         </View>
-        <Text style={{textAlign: 'center', color: '#fff', paddingVertical: 8}}>Tap to take a picute</Text>
+        <Text style={{textAlign: 'center', color: '#fff', paddingVertical: 8}}>Tap to take a picture</Text>
       </Camera>
     </View>
   );
